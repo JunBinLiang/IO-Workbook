@@ -39,7 +39,7 @@ ostream& operator <<(ostream& out, const vector<T>& a) {
   return out;
 }
 
-
+//len[i]代表的是i号节点代表的回文串长度
 
 const int N = 4e5 + 100;
 
