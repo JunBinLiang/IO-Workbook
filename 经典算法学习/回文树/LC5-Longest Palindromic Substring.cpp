@@ -17,7 +17,7 @@ struct PalindromeTree {
     }
     
     int getfail(int x, int i) { //寻找fail node
-        while(i - len[x] - 1 < 0 || s[i - len[x] - 1] != s[i]) x = fail[x];
+        while(s[i - len[x] - 1] != s[i]) x = fail[x];
         return x;
     }
     
