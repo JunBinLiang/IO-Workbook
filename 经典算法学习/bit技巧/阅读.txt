@@ -1,0 +1,1 @@
+1. Submask Enumeration O(3 ^ n) : https://cp-algorithms.com/algebra/all-submasks.html
