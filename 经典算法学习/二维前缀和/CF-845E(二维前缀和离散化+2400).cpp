@@ -85,21 +85,6 @@ bool ok(int mid) {
     }
   }
   
-  /*cout << mid << endl;
-  for(int i = f1[1]; i <= f1[n]; i++) {
-      for(int j = f2[1]; j <= f2[m]; j++) {
-          cout << diff[i][j] << "  ";
-      } cout << endl;
-  }
-  cout << endl;
-  for(int i = f1[1]; i <= f1[n]; i++) {
-      for(int j = f2[1]; j <= f2[m]; j++) {
-          cout << mat[i][j] << "  ";
-      } cout << endl;
-  }
-  cout << endl; cout << endl;*/
-
-
   int L = -1, R = -1, U = -1, D = -1;
   int length = 0;
   for(int i = f1[1]; i <= f1[n]; i++) {
