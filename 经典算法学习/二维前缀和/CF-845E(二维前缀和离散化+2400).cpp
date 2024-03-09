@@ -114,9 +114,6 @@ bool ok(int mid) {
     length = max(length, (rev1[D + 1] - 1) - (rev1[U]) + 1);
   }
   
-  //cout << "len " << mid << " " << length << endl;
-  //cout << L << " " << R << " " << (rev1[R + 1] - 1) << "  " << (rev1[L - 1] + 1) << endl;
-  //cout << "______________" << endl; 
   return  mid * 2 + 1 >= length ;
 }
 
