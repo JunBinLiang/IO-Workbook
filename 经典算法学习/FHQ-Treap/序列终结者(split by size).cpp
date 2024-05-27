@@ -184,7 +184,7 @@ struct FHQ {
 
 int main() {
   FHQ t;
-  t.tr[0].mx = -1e18; //处理0，处理pushup时为leaf的情况 
+  t.tr[0].mx = -1e18; //处理0，处理pushup时为leaf的情况。如果pushup 为leaf，那它的左右都是0，我们可以使用-1e18作为default 最小
   int n, m;
   scanf("%d%d", &n, &m);
   for(int i = 1; i <= n; i++) t.root = t.merge(t.root, t.newnode(0));
