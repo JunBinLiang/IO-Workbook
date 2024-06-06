@@ -17,7 +17,7 @@ using ll = long long;
 using ull = unsigned long long;
 #define FOR(i, a, b) for (int i = a; i < b; ++i)
 
-const int N = 200 + 10;
+const int N = 1e5 + 10;
 namespace DirectGraphSCC {
   vector<int> g[N];
   vector<int> stk;
