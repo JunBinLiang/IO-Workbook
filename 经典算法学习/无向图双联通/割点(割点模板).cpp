@@ -54,12 +54,14 @@ namespace CutPoint {
         low[u] = min(low[u], dfn[to]);
       } else {
         tarjan(u, to);
-        child++;
         low[u] = min(low[u], low[to]);
-        if (pa && low[to] >= dfn[u]) cut = 1;  
+        if (low[to] >= dfn[u]) {
+            child++;
+        }
         // 如果u不是根节点，且存在 direct child使得 low[to] >= dfn[u]，则u是割点
       }
     }
+    if(pa && child) cut = 1;
     if (!pa && child >= 2) cut = 1;  // 如果为根节点，且有 >= 2个子树
     if (cut) ans.push_back(u);
   }
