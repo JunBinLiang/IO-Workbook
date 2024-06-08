@@ -27,6 +27,7 @@ namespace CutPoint {
   vector<int> ans;
 
   void init(int n) {
+    t = 0;
     for(int i = 0; i <= n; i++) {
       dfn[i] = low[i] = 0;
       g[i].clear();
