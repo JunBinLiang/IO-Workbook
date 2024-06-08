@@ -1,4 +1,14 @@
 //https://vjudge.net/problem/%E6%B4%9B%E8%B0%B7-P3225
+
+/*
+1.若此分量内有割点>1，则无论哪一个被堵，连通性依旧。贡献为0
+
+2.若割点==1，则在割点及分量内任意一点各建一个，ans*=DCC.size()-1。贡献为1
+
+3.若割点==0，则任建两个，ans=DCC.size()(DCC.size()-1)/2。贡献为2
+
+*/
+
 #include <iostream>
 #include <vector>
 #include <string>
