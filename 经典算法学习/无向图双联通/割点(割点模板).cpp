@@ -17,7 +17,12 @@ using namespace std;
 using ll = long long;
 using ull = unsigned long long;
 #define FOR(i, a, b) for (int i = a; i < b; ++i)
-
+/*
+1. 它是DFS树的 根节点：如果 
+ 拥有2个子树，那么就是一个割点。
+2. 它不是DFS树的 根节点：如果 
+ 存在一个 direct child ，使得 low[to] >= dfn[u],那么 to 就是一个割点。（因为这说明 to 无法到达 的上方）
+*/
 //https://tom0727.github.io/post/041-%E5%89%B2%E7%82%B9-%E6%A1%A5-bcc/
 //https://oi-wiki.org/graph/cut/
 namespace CutPoint {
