@@ -69,7 +69,7 @@ void solve() {
     for(int i = 0; i < pos.size(); i++) {
         if(i == 0) {
             notfill += pos[i];
-            ans *= (C(notfill, a[pos[i]]) * fact[a[pos[i]]]);
+            ans *= ((C(notfill, a[pos[i]]) * C(notfill, a[pos[i]]) % MOD) * fact[a[pos[i]]]);
             ans %= MOD;
             notfill -= a[pos[i]];
         } else {
@@ -91,7 +91,6 @@ void solve() {
             ans %= MOD;
             notfill += newadd - mustfill;
         }
-        //cout << i << " " << ans <<"  " << notfill << endl;
     }
 
     if(pos.back() != n) {
