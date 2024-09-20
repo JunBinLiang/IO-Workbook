@@ -3,3 +3,5 @@ https://blog.csdn.net/m0_51354737/article/details/127967064
 https://www.cnblogs.com/Miracevin/p/9831078.html
 
 证明：https://www.acwing.com/blog/content/8328/
+
+SG 定理：https://nthu-cp.github.io/NTHU-CPP/misc/nim_and_sg_value.html
