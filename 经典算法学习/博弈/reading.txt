@@ -5,4 +5,5 @@ https://www.cnblogs.com/Miracevin/p/9831078.html
 证明：https://www.acwing.com/blog/content/8328/
 
 SG 定理：https://nthu-cp.github.io/NTHU-CPP/misc/nim_and_sg_value.html
-https://cloud.tencent.com/developer/article/2033965
+https://cloud.tencent.com/developer/article/2033965 (图文)
+https://www.cnblogs.com/Knuth/archive/2009/09/05/1561007.html (比较好的解释)
