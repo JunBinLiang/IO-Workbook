@@ -64,7 +64,7 @@ struct PersistantTrie {
     for(int i = 27; i >= 0; i--) {
       int b = 0;
       if(x & (1 << i)) b = 1;
-      if(pu == -1) {
+      if(pu == -1) { //unique to the current tree
         if(tr[u][b ^ 1] != -1) {
           u = tr[u][b ^ 1];
           ans += (1 << i);
@@ -72,21 +72,10 @@ struct PersistantTrie {
           u = tr[u][b];
         }
       } else {
-        if(tr[u][b ^ 1] != -1) {
-          if(tr[pu][b ^ 1] != -1) {
-            if(cnt[tr[u][b ^ 1]] - cnt[tr[pu][b ^ 1]] > 0) {
-              u = tr[u][b ^ 1];
-              pu = tr[pu][b ^ 1];
-              ans += (1 << i);
-            } else {
-              u = tr[u][b];
-              pu = tr[pu][b];
-            }
-          } else {
-            pu = -1;
+        if(tr[u][b ^ 1] != -1 && cnt[tr[u][b ^ 1]] - cnt[tr[pu][b ^ 1]] > 0) {
             u = tr[u][b ^ 1];
+            pu = tr[pu][b ^ 1];
             ans += (1 << i);
-          }
         } else {
           u = tr[u][b];
           pu = tr[pu][b];
@@ -137,4 +126,3 @@ int main(){
   }
   return 0;
 }
-
